@@ -1,0 +1,25 @@
+Se requiere hacer lo siguiente:
+Tomando en cuenta una empresa de desarrollo de software:
+    -   La empresa tiene un servidor de correos, de cual existe un correo predeterminado para soporte .
+    -   La empresa tiene distintas áreas donde el personal esta asignado(infraestructura, desarrollo, testing).
+    -   La empresa cuenta con medios de comunicacion, para el personal como: slack, teams, correo de la empresa; los cuales son creados para al personal que requiera.
+    -   La empresa cuenta con una red privada a la cual se accede mediante un programa configurado el cual es proporcionado por la empresa al personal.
+
+Patrones de diseño:
+    -   creacional
+        -   Singleton:          obtener correo de soporte
+        -   Factory method:     crear areas para personal
+        -   Builder:            crear cuentas para nuevo personal
+        -   Abstract Factory:   obtener intrucciones segun preparar un ambiente de trabajo segun sus habilidades en los distintos proyectos
+        -   Prototype:          crear y distribuir programa de acceso a vpn a los distintos usuarios.
+
+    -   estructural
+        -   composite           creacion de tarea y subtareas, y calcular tiempo para su culminacion
+        -   facade              refactorizacion de la creacion de usuarios
+        -   decorator           enviar mensaje al correo como a slack
+
+
+    -   comportamiento
+        -   strategy            enviar mensaje a un correo o a slack
+        -   template method     realizar registro cuando se asigne una vpn a un usuario
+        -   observer            envio de mensaje a los empleados de area cuando uno nuevo ingresa
